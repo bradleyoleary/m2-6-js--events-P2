@@ -19,9 +19,18 @@ const people = [
 
 function olderPeople(peopleArr, age) {
   // return something
+  // Need to create new array with filter. If person
+  let olderPerson = peopleArr.filter((person) => {//being performed
+    if (person.age > age) {
+      return person.name
+    }
+  })
+  return olderPerson;
 }
 
 // 2. Do a console.log to verify your function.
+
+console.log(olderPeople(people, 35))
 
 // 3. Run the test to validate: yarn test exercise-4
 

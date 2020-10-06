@@ -1,1 +1,89 @@
 /* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+  }
+
+  .body {
+    background: white;
+}
+
+  h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 45px;
+      font-weight: bolder;
+  }
+
+  .wrapper {
+    background: white;
+      margin: auto;
+      margin-top: 32px;
+      padding: 24px;
+      max-width: 475px;
+      border-radius: 16px;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  }
+
+  .info-input {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .inputs {
+    border: 1px solid rgb(182, 182, 182);
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+  }
+
+  .terms {
+    background: rgba(235, 235, 235, 0.879);
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 160px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+
+  button[type="reset"] {
+    background: rgb(247, 50, 102);
+  }
+
+  button[type="submit"] {
+    background: rgb(0, 0, 210);
+  }
+
+  .errorMessage {
+    background: rgb(247, 50, 102);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+  }
+
+  .pink-border {
+    border: 3px solid rgb(247, 50, 102);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }

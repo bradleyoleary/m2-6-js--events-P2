@@ -20,11 +20,24 @@ const people = [
 // Use Math.round()
 
 function avgAge(peopleArr) {
-  // return something
+  // let sum = 0
+  let sum = 0;
+  //create loop to add age to the sum and return the sum
+  peopleArr.forEach((people) => {
+    let age = people.age; 
+    sum += age;
+    
+    return sum;
+  });
+  //utilize Math.round to calculate the sum without decimals. Must devide sum by arr length.
+  return Math.round(sum / peopleArr.length);
+
 }
 
 // 2. Do a console.log to verify your function.
 
+console.log(avgAge(people))
+
 // 3. Run the test to validate: yarn test exercise-2
 
-module.exports = { avgAge, people };
+module.exports = { avgAge, people }

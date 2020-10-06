@@ -18,10 +18,21 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-  // return something
+  //return a new arr - have to use map to itterate through arr and return
+  let newArr = peopleArr.map((person) => {
+    //if persons middle name is not equal to undefined
+    if (person.name.middle !== undefined) {
+      return `${person.name.first} ${person.name.middle} ${person.name.last}`
+    } else {
+      return `${person.name.first} ${person.name.last}`;
+    }
+  });
+  return newArr;
 }
 
 // 2. Do a console.log to verify your function.
+
+console.log(fullName(people))
 
 // 3. Run the test to validate: yarn test exercise-3
 

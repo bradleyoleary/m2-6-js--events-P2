@@ -5,10 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+  href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+  rel="stylesheet"/>
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <form id="form" autocomplete="on">
+        <h1>Signup Form</h1>
+        <div class="info-input">
+          <label for="fullname">Full name:</label>
+          <input type = "text" name = "name" id = "name" class = "inputs" required />
+        </div>
+        <div class="info-input">
+          <label for="street-address">Street address</label>
+          <input type = "text" name = "street" id = "street" class = "inputs" required />
+        </div>
+        <div class="info-input">
+          <label for="email">Email address</label>
+          <input type = "email" name = "email" id = "email" class = "inputs" autocomplete="on" required />
+        </div>
+        <div class="info-input">
+          <label for="phone">Phone number</label>
+          <input type = "text" name = "phone" id = "phone" class = "inputs" required />
+        </div>
+        <div class="info-input">
+          <label for="password">Password</label>
+          <input type = "password" name = "password" id = "password" class = "inputs" autocomplete="off" required />
+        </div>
+        <div class="info-input">
+          <label for="confirmPass">Confirm Password</label>
+          <input type = "password" name = "confirmPass" id = "confirmPass" class = "inputs" autocomplete="off" required />
+        </div>
+        <div class="terms">
+          <input type = "checkbox" name = "terms" id = "termcheckbox" value="agree" required />
+          <label> I agree to the <a href="#">terms of service</a>. </label>
+        </div>
+        <div id="errorMessage">
+          <p id="passwordError"></p>
+        </div>
+        <footer>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
+
+
